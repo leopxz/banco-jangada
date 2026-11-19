@@ -1,0 +1,757 @@
+{
+  "aviso": "DADOS FICTÍCIOS - Plaid Sandbox. Não representam pessoa nem banco real.",
+  "gerado_em": "2026-11-19T11:01:28",
+  "fonte": {
+    "ambiente": "https://sandbox.plaid.com",
+    "endpoints": [
+      "POST /accounts/get",
+      "POST /transactions/get"
+    ],
+    "instituicao_id": "ins_109508"
+  },
+  "regras": {
+    "sinal_transacao": "positivo = saída; negativo = entrada",
+    "natureza_divida": "em cartão e empréstimo, saldo_atual é dívida e disponivel é limite"
+  },
+  "periodo": {
+    "inicio": "2026-08-22",
+    "fim": "2026-11-19",
+    "dias": 90
+  },
+  "contas": [
+    {
+      "nome": "Plaid Checking",
+      "nome_oficial": "Plaid Gold Standard 0% Interest Checking",
+      "tipo": "depository",
+      "subtipo": "checking",
+      "natureza": "dinheiro",
+      "saldo_atual": 110,
+      "disponivel": 100,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Saving",
+      "nome_oficial": "Plaid Silver Standard 0.1% Interest Saving",
+      "tipo": "depository",
+      "subtipo": "savings",
+      "natureza": "dinheiro",
+      "saldo_atual": 210,
+      "disponivel": 200,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid CD",
+      "nome_oficial": "Plaid Bronze Standard 0.2% Interest CD",
+      "tipo": "depository",
+      "subtipo": "cd",
+      "natureza": "dinheiro",
+      "saldo_atual": 1000,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Credit Card",
+      "nome_oficial": "Plaid Diamond 12.5% APR Interest Credit Card",
+      "tipo": "credit",
+      "subtipo": "credit card",
+      "natureza": "divida",
+      "saldo_atual": 410,
+      "disponivel": null,
+      "limite": 2000,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Money Market",
+      "nome_oficial": "Plaid Platinum Standard 1.85% Interest Money Market",
+      "tipo": "depository",
+      "subtipo": "money market",
+      "natureza": "dinheiro",
+      "saldo_atual": 43200,
+      "disponivel": 43200,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid IRA",
+      "nome_oficial": null,
+      "tipo": "investment",
+      "subtipo": "ira",
+      "natureza": "investimento",
+      "saldo_atual": 320.76,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid 401k",
+      "nome_oficial": null,
+      "tipo": "investment",
+      "subtipo": "401k",
+      "natureza": "investimento",
+      "saldo_atual": 23631.9805,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Student Loan",
+      "nome_oficial": null,
+      "tipo": "loan",
+      "subtipo": "student",
+      "natureza": "divida",
+      "saldo_atual": 65262,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Mortgage",
+      "nome_oficial": null,
+      "tipo": "loan",
+      "subtipo": "mortgage",
+      "natureza": "divida",
+      "saldo_atual": 56302.06,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid HSA",
+      "nome_oficial": "Plaid Cares Health Savings Account",
+      "tipo": "depository",
+      "subtipo": "hsa",
+      "natureza": "dinheiro",
+      "saldo_atual": 6009,
+      "disponivel": 6009,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Cash Management",
+      "nome_oficial": "Plaid Growth Cash Management",
+      "tipo": "depository",
+      "subtipo": "cash management",
+      "natureza": "dinheiro",
+      "saldo_atual": 12060,
+      "disponivel": 12060,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Auto Loan",
+      "nome_oficial": null,
+      "tipo": "loan",
+      "subtipo": "auto",
+      "natureza": "divida",
+      "saldo_atual": 23211.33,
+      "disponivel": null,
+      "limite": null,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Home Equity Line of Credit",
+      "nome_oficial": null,
+      "tipo": "loan",
+      "subtipo": "home equity",
+      "natureza": "divida",
+      "saldo_atual": 13500.5,
+      "disponivel": 47647.5,
+      "limite": 61148,
+      "moeda": "USD"
+    },
+    {
+      "nome": "Plaid Business Credit Card",
+      "nome_oficial": "Plaid Platinum Small Business Credit Card",
+      "tipo": "credit",
+      "subtipo": "credit card",
+      "natureza": "divida",
+      "saldo_atual": 5020,
+      "disponivel": 4980,
+      "limite": 10000,
+      "moeda": "USD"
+    }
+  ],
+  "transacoes": [
+    {
+      "data": "2026-11-19",
+      "descricao": "AUTOMATIC PAYMENT - THANK",
+      "estabelecimento": null,
+      "valor": 2078.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-19",
+      "descricao": "KFC",
+      "estabelecimento": "KFC",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-19",
+      "descricao": "Madison Bicycle Shop",
+      "estabelecimento": "Madison Bicycle Center",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-10",
+      "descricao": "CREDIT CARD 3333 PAYMENT *//",
+      "estabelecimento": null,
+      "valor": 25,
+      "movimento": "saida",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-10",
+      "descricao": "Uber 063015 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 5.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-09",
+      "descricao": "ACH Electronic CreditGUSTO PAY 123456",
+      "estabelecimento": null,
+      "valor": 5850,
+      "movimento": "saida",
+      "conta": "Plaid Money Market",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-09",
+      "descricao": "CD DEPOSIT .INITIAL.",
+      "estabelecimento": null,
+      "valor": 1000,
+      "movimento": "saida",
+      "conta": "Plaid CD",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-08",
+      "descricao": "Touchstone Climbing",
+      "estabelecimento": "Touchstone Climbing",
+      "valor": 78.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "PERSONAL_CARE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-08",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": -500,
+      "movimento": "entrada",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-07",
+      "descricao": "McDonald's",
+      "estabelecimento": "McDonald's",
+      "valor": 12,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-07",
+      "descricao": "Starbucks",
+      "estabelecimento": "Starbucks",
+      "valor": 4.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-06",
+      "descricao": "SparkFun",
+      "estabelecimento": "FUN",
+      "valor": 89.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "GENERAL_MERCHANDISE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-11-05",
+      "descricao": "INTRST PYMNT",
+      "estabelecimento": null,
+      "valor": -4.22,
+      "movimento": "entrada",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "TRANSFER_IN",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-26",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-24",
+      "descricao": "Uber 072515 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 6.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-21",
+      "descricao": "Tectra Inc",
+      "estabelecimento": null,
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "RENT_AND_UTILITIES",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-20",
+      "descricao": "AUTOMATIC PAYMENT - THANK",
+      "estabelecimento": null,
+      "valor": 2078.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-20",
+      "descricao": "KFC",
+      "estabelecimento": "KFC",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-20",
+      "descricao": "Madison Bicycle Shop",
+      "estabelecimento": "Madison Bicycle Center",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "CREDIT CARD 3333 PAYMENT *//",
+      "estabelecimento": null,
+      "valor": 25,
+      "movimento": "saida",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-11",
+      "descricao": "Uber 063015 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 5.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "ACH Electronic CreditGUSTO PAY 123456",
+      "estabelecimento": null,
+      "valor": 5850,
+      "movimento": "saida",
+      "conta": "Plaid Money Market",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-10",
+      "descricao": "CD DEPOSIT .INITIAL.",
+      "estabelecimento": null,
+      "valor": 1000,
+      "movimento": "saida",
+      "conta": "Plaid CD",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-09",
+      "descricao": "Touchstone Climbing",
+      "estabelecimento": "Touchstone Climbing",
+      "valor": 78.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "PERSONAL_CARE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-09",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": -500,
+      "movimento": "entrada",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-08",
+      "descricao": "McDonald's",
+      "estabelecimento": "McDonald's",
+      "valor": 12,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-08",
+      "descricao": "Starbucks",
+      "estabelecimento": "Starbucks",
+      "valor": 4.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-07",
+      "descricao": "SparkFun",
+      "estabelecimento": "FUN",
+      "valor": 89.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "GENERAL_MERCHANDISE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-10-06",
+      "descricao": "INTRST PYMNT",
+      "estabelecimento": null,
+      "valor": -4.22,
+      "movimento": "entrada",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "TRANSFER_IN",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-26",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-24",
+      "descricao": "Uber 072515 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 6.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-21",
+      "descricao": "Tectra Inc",
+      "estabelecimento": null,
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "RENT_AND_UTILITIES",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-20",
+      "descricao": "AUTOMATIC PAYMENT - THANK",
+      "estabelecimento": null,
+      "valor": 2078.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-20",
+      "descricao": "KFC",
+      "estabelecimento": "KFC",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-20",
+      "descricao": "Madison Bicycle Shop",
+      "estabelecimento": "Madison Bicycle Center",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-11",
+      "descricao": "CREDIT CARD 3333 PAYMENT *//",
+      "estabelecimento": null,
+      "valor": 25,
+      "movimento": "saida",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "LOAN_PAYMENTS",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-11",
+      "descricao": "Uber 063015 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 5.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-10",
+      "descricao": "ACH Electronic CreditGUSTO PAY 123456",
+      "estabelecimento": null,
+      "valor": 5850,
+      "movimento": "saida",
+      "conta": "Plaid Money Market",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-10",
+      "descricao": "CD DEPOSIT .INITIAL.",
+      "estabelecimento": null,
+      "valor": 1000,
+      "movimento": "saida",
+      "conta": "Plaid CD",
+      "pendente": false,
+      "categoria": "TRANSFER_OUT",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-09",
+      "descricao": "Touchstone Climbing",
+      "estabelecimento": "Touchstone Climbing",
+      "valor": 78.5,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "PERSONAL_CARE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-09",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": -500,
+      "movimento": "entrada",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-08",
+      "descricao": "McDonald's",
+      "estabelecimento": "McDonald's",
+      "valor": 12,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-08",
+      "descricao": "Starbucks",
+      "estabelecimento": "Starbucks",
+      "valor": 4.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "FOOD_AND_DRINK",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-07",
+      "descricao": "SparkFun",
+      "estabelecimento": "FUN",
+      "valor": 89.4,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "GENERAL_MERCHANDISE",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-09-06",
+      "descricao": "INTRST PYMNT",
+      "estabelecimento": null,
+      "valor": -4.22,
+      "movimento": "entrada",
+      "conta": "Plaid Saving",
+      "pendente": false,
+      "categoria": "TRANSFER_IN",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-08-27",
+      "descricao": "United Airlines",
+      "estabelecimento": "United Airlines",
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "TRAVEL",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-08-25",
+      "descricao": "Uber 072515 SF**POOL**",
+      "estabelecimento": "Uber",
+      "valor": 6.33,
+      "movimento": "saida",
+      "conta": "Plaid Checking",
+      "pendente": false,
+      "categoria": "TRANSPORTATION",
+      "moeda": "USD"
+    },
+    {
+      "data": "2026-08-22",
+      "descricao": "Tectra Inc",
+      "estabelecimento": null,
+      "valor": 500,
+      "movimento": "saida",
+      "conta": "Plaid Credit Card",
+      "pendente": false,
+      "categoria": "RENT_AND_UTILITIES",
+      "moeda": "USD"
+    }
+  ],
+  "resumo": {
+    "total_registros": 48,
+    "confirmadas": 48,
+    "pendentes": 0,
+    "entradas_confirmadas": 1512.66,
+    "saidas_confirmadas": 33448.38,
+    "saidas_por_categoria": [
+      {
+        "categoria": "TRANSFER_OUT",
+        "registros": 6,
+        "saidas": 20550.0
+      },
+      {
+        "categoria": "LOAN_PAYMENTS",
+        "registros": 6,
+        "saidas": 6310.5
+      },
+      {
+        "categoria": "FOOD_AND_DRINK",
+        "registros": 9,
+        "saidas": 1548.99
+      },
+      {
+        "categoria": "TRANSPORTATION",
+        "registros": 9,
+        "saidas": 1535.19
+      },
+      {
+        "categoria": "TRAVEL",
+        "registros": 3,
+        "saidas": 1500.0
+      },
+      {
+        "categoria": "RENT_AND_UTILITIES",
+        "registros": 3,
+        "saidas": 1500.0
+      },
+      {
+        "categoria": "GENERAL_MERCHANDISE",
+        "registros": 3,
+        "saidas": 268.2
+      },
+      {
+        "categoria": "PERSONAL_CARE",
+        "registros": 3,
+        "saidas": 235.5
+      }
+    ],
+    "total_informado_pela_api": 48
+  }
+}
