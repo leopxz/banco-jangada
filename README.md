@@ -151,14 +151,14 @@ uv run scripts\consulta_plaid.py                # próximas vezes
 
 | | |
 |---|---|
-| Conectores ativos | ![](docs/prints/01-conectores.png) |
-| Pluggy: endpoints de Transaction (`/transactions` descontinuado, `/v2/transactions` atual) | ![](docs/prints/02-pluggy-endpoints.png) |
-| Plaid: documentação de Item, `/accounts/get` e `/transactions/get` | ![](docs/prints/03-plaid-docs.png) |
-| Plaid: Item de Sandbox criado pelo MCP (token não exibido) | ![](docs/prints/04-plaid-item-criado.png) |
-| Script: 14 contas e 48 transações consultadas | ![](docs/prints/05-script-terminal.png) |
-| Tabela de contas | ![](docs/prints/06-contas.png) |
-| 5 transações mais recentes e saídas por categoria | ![](docs/prints/07-transacoes.png) |
-| 3 padrões de gasto | ![](docs/prints/08-padroes.png) |
+| Conectores ativos | ![](prints/01-conectores.png) |
+| Pluggy: endpoints de Transaction (`/transactions` descontinuado, `/v2/transactions` atual) | ![](prints/02-pluggy-endpoints.png) |
+| Plaid: documentação de Item, `/accounts/get` e `/transactions/get` | ![](prints/03-plaid-docs.png) |
+| Plaid: Item de Sandbox criado pelo MCP (token não exibido) | ![](prints/04-plaid-item-criado.png) |
+| Script: 14 contas e 48 transações consultadas (repare na nova tentativa automática após `PRODUCT_NOT_READY`) | ![](prints/05-script-terminal.png) |
+| Tabela de contas | ![](prints/06-contas.png) |
+| 5 transações mais recentes e saídas por categoria | ![](prints/07-transacoes.png) |
+| 3 padrões de gasto | ![](prints/08-padroes.png) |
 
 ### Três padrões de gasto (90 dias, 48 transações confirmadas, valores em US$)
 
@@ -183,12 +183,12 @@ uv run scripts\consulta_plaid.py                # próximas vezes
 
 | | |
 |---|---|
-| Especificação enviada ao Lovable | ![](docs/prints/09-lovable-chat.png) |
-| Tela inicial, com o aviso de dados fictícios | ![](docs/prints/10-tela-inicial.png) |
-| Contas | ![](docs/prints/11-app-contas.png) |
-| Gastos por categoria | ![](docs/prints/12-app-categorias.png) |
-| Gastos | ![](docs/prints/13-app-gastos.png) |
-| Resumo das movimentações | ![](docs/prints/14-app-resumo.png) |
+| Especificação enviada ao Lovable | ![](prints/09-lovable-chat.png) |
+| Tela inicial, com o aviso de dados fictícios | ![](prints/10-tela-inicial.png) |
+| Contas | ![](prints/11-app-contas.png) |
+| Gastos por categoria | ![](prints/12-app-categorias.png) |
+| Gastos | ![](prints/13-app-gastos.png) |
+| Resumo das movimentações | ![](prints/14-app-resumo.png) |
 
 ---
 
@@ -244,8 +244,8 @@ O prompt completo está em [`docs/prompt-lovable.md`](docs/prompt-lovable.md). �
 ├── dados/
 │   └── sandbox_snapshot.json    # 14 contas + 48 transações fictícias, sem segredos
 ├── docs/
-│   ├── prompt-lovable.md        # especificação enviada ao Lovable
-│   └── prints/                  # evidências (01 a 14)
+│   └── prompt-lovable.md        # especificação enviada ao Lovable
+├── prints/                      # evidências (01 a 14)
 ├── scripts/
 │   └── consulta_plaid.py        # consulta ao Plaid Sandbox
 └── src/                         # código do app gerado pelo Lovable
