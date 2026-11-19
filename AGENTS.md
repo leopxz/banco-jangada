@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+<!-- AGENT-MEMORY:BEGIN -->
+- UI reads finance data only via `src/lib/finance/financeService.ts`; Stage 2 swaps its source (Plaid, server-side secrets) without touching UI.
+- Jaci answers are rule-based (`src/lib/finance/jaci.ts`), numbers computed in code; tests in `jaci.test.ts` lock the expected totals.
+<!-- AGENT-MEMORY:END -->
