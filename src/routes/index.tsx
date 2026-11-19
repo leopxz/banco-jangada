@@ -75,7 +75,7 @@ function ChatPage() {
       <div className="bg-accent px-4 py-1.5 text-center text-xs font-medium text-accent-foreground">
         Demonstração · Dados fictícios (Plaid Sandbox) · Referência: {REFERENCE_DATE}
       </div>
-      <div className="flex min-h-0 flex-1">
+      <div className="relative flex min-h-0 flex-1">
         <aside className={`${menu ? "flex" : "hidden"} absolute inset-y-0 left-0 z-20 w-72 flex-col bg-sidebar text-sidebar-foreground md:static md:flex`}>
           <div className="flex items-center gap-3 p-4">
             <div className="grid h-10 w-10 place-items-center rounded-xl bg-sidebar-primary font-display text-xl font-semibold text-sidebar-primary-foreground">J</div>
@@ -129,7 +129,7 @@ function ChatPage() {
             <form className="mx-auto flex max-w-3xl items-end gap-2 rounded-2xl border bg-card p-2 shadow-sm focus-within:ring-2 focus-within:ring-ring" onSubmit={(e) => { e.preventDefault(); send(input); }}>
               <textarea ref={taRef} rows={1} value={input} onChange={(e) => setInput(e.target.value)}
                 onKeyDown={(e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(input); } }}
-                placeholder="Pergunte sobre contas, saldos ou gastos…" aria-label="Mensagem"
+                placeholder="Pergunte à Jaci…" aria-label="Mensagem"
                 className="max-h-40 min-h-[2.5rem] flex-1 resize-none bg-transparent px-2 py-2 outline-none placeholder:text-muted-foreground" />
               <button type="submit" disabled={!input.trim() || loading} aria-label="Enviar" className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-primary text-primary-foreground disabled:opacity-40">
                 <ArrowUp className="h-5 w-5" />

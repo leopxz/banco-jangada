@@ -35,7 +35,21 @@ export function BlockView({ b, showBrl, onSuggest }: { b: Block; showBrl: boolea
       );
     case "table":
       return (
-        <div className="overflow-x-auto rounded-xl border bg-card">
+        <>
+        <div className="space-y-2 sm:hidden">
+          {b.rows.map((r, i) => (
+            <dl key={i} className="rounded-xl border bg-card p-3 text-sm">
+              <div className="mb-1 font-semibold"><CellView c={r[0] ?? ""} showBrl={showBrl} /></div>
+              {r.slice(1).map((c, j) => (
+                <div key={j} className="flex justify-between gap-3 py-0.5">
+                  <dt className="text-muted-foreground">{b.headers[j + 1]}</dt>
+                  <dd className="text-right"><CellView c={c} showBrl={showBrl} /></dd>
+                </div>
+              ))}
+            </dl>
+          ))}
+        </div>
+        <div className="hidden overflow-x-auto rounded-xl border bg-card sm:block">
           <table className="w-full text-sm">
             <thead className="bg-muted text-left text-xs uppercase tracking-wide text-muted-foreground">
               <tr>{b.headers.map((h) => <th key={h} className="px-3 py-2 font-medium">{h}</th>)}</tr>
@@ -49,6 +63,7 @@ export function BlockView({ b, showBrl, onSuggest }: { b: Block; showBrl: boolea
             </tbody>
           </table>
         </div>
+        </>
       );
     case "bars": {
       const max = Math.max(...b.items.map((i) => i.value));
