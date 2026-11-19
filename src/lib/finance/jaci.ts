@@ -47,8 +47,9 @@ function parseFilter(q: string): Filter {
   const mi = MONTHS.findIndex((m) => q.includes(m));
   if (mi >= 0) f.month = mi + 1;
   for (const [re, name] of ACC_KEYS) if (re.test(q)) { f.account = name; break; }
-  const d = [...q.matchAll(/(\d{1,2})\/(\d{1,2})(?:\/(\d{4}))?/g)].map((m) => `${m[3] ?? "2026"}-${m[2].padStart(2,"0")}-${m[1].padStart(2,"0")}`);
-  if (d.length >= 2) { f.from = d[0] < d[1] ? d[0] : d[1]; f.to = d[0] < d[1] ? d[1] : d[0]; }
+  const d = [...q.matchAll(/(\d{1,2})\/(\d{1,2})(?:\/(\d{4}))?/g)].map((m) => `${m[3] ?? "2026"}-${(m[2] ?? "").padStart(2,"0")}-${(m[1] ?? "").padStart(2,"0")}`);
+  const [d0, d1] = d;
+  if (d0 && d1) { f.from = d0 < d1 ? d0 : d1; f.to = d0 < d1 ? d1 : d0; }
   return f;
 }
 function applyFilter(txs: Transaction[], f: Filter) {

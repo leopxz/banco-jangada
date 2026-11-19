@@ -78,10 +78,10 @@ const n = (s: string) => (s === "null" ? null : s);
 const num = (s: string) => (s === "null" ? null : Number(s));
 
 export const ACCOUNTS: Account[] = ACC.split("\n").map((l) => {
-  const [name, off, type, subtype, nature, cur, av, lim] = l.split(";");
+  const [name, off, type, subtype, nature, cur, av, lim] = l.split(";") as string[] as [string,string,string,string,string,string,string,string];
   return { name, officialName: n(off), type, subtype, nature: nature as Nature, current: Number(cur), available: num(av), limit: num(lim), currency: "USD" };
 });
 export const TRANSACTIONS: Transaction[] = TX.split("\n").map((l) => {
-  const [date, description, merchant, amount, account, pending, category] = l.split(";");
+  const [date, description, merchant, amount, account, pending, category] = l.split(";") as string[] as [string,string,string,string,string,string,string,string];
   return { date, description, merchant: n(merchant), amount: Number(amount), account, pending: pending === "true", category };
 });
